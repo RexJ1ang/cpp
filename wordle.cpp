@@ -30,5 +30,6 @@ int main() {
     string randomWord = wordList[dist(gen)];
     cout << "Random 5-letter word: " << randomWord << endl;
 
+    //so now i have a random 5 letter word. now i need to be able to compare each letter to user input.
     return 0;
 }
