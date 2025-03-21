@@ -1,3 +1,30 @@
+/*
+
+How to make wordle?
+
+1) Create a random 5 letter word
+    ***function COMPLETE!***
+
+2) Take user input as a guess
+    ***function COMPLETE!***
+
+3) Determine if it is a valid 5 letter word
+    ***function COMPLETE!***
+
+4) Compare the guess to the word based on index
+    ***function COMPLETE!***
+
+5) If correct index, make 'green' and continue. Either try again if incorrect, or return 'that's the word' 
+    ***function NOT COMPLETE!***
+
+6) If there is an instance of the letter, return 'letter is present somewhere'
+    ***function NOT COMPLETE!***
+
+7) Try again until correct
+    ***function NOT COMPLETE!***
+    
+*/
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -6,30 +33,6 @@
 using namespace std;
 
 int main() {
-    vector<string> wordList;    // create a vectore to store a 5 letter word
-    ifstream file("words.txt"); // open file words.txt 
-    string word;                // initialize a string word to loop through the file
-
-    // Load only 5-letter words
-    while (file >> word) {              // read each word in the file
-        if (word.length() == 5) {       // check if the word length is five
-            wordList.push_back(word);   // push back adds the valid word to wordList
-        }
-    }
-
-    if (wordList.empty()) {                     // if no vectors are in wordList,
-        cout << "No 5-letter words found.\n";   // then give an error message
-        return 1;
-    }
-
-    // Use C++11+ random
-    random_device rd;                                           // random seed
-    mt19937 gen(rd());                                          // RNG
-    uniform_int_distribution<> dist(0, wordList.size() - 1);    //
-
-    string randomWord = wordList[dist(gen)];
-    cout << "Random 5-letter word: " << randomWord << endl;
-
-    //so now i have a random 5 letter word. now i need to be able to compare each letter to user input.
+    
     return 0;
 }

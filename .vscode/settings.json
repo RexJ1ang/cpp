@@ -2,7 +2,8 @@
     "files.associations": {
         "ctime": "cpp",
         "iostream": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe"

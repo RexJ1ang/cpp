@@ -20,10 +20,10 @@ int main() {
             cin.ignore(1000, '\n');
             cout << "Invalid input";
         } else if (userAnswer == num1 + num2) {
-            cout << "good shit!!\n";
+            cout << "Correct!!\n";
             break;     
         } else {
-            cout << "you wrong bitch\n";
+            cout << "Wrong, Try Again!\n";
         }
         
     }
