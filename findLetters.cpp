@@ -20,7 +20,7 @@ int main() {
 }
 
 void findLetters(const string& word, const string& guess) {
-   
+    string checked(word.length(), ' ');
 
     for (int i = 0; i < word.length(); i++) { //loops through 5 characters
         int count = 0; // starts the count at 0
@@ -28,12 +28,18 @@ void findLetters(const string& word, const string& guess) {
         size_t pos = guess.find(word[i]);   // 
 
         while (pos != string::npos) {
-            count++;
+            if (checked[pos] != 'X') {
+                count++;
+                checked[pos] = 'X';
+            }
             pos = guess.find(word[i], pos + 1);
         }
+
 
         cout << guess[i] << " is in the target word " << count << " times." << endl;
     }
 
     
 }
+
+// must create a new variable string to keep track of which characters have already been tested. 

@@ -15,12 +15,12 @@ How to make wordle?
     ***function COMPLETE!***
 
 5) If correct index, make 'green' and continue. Either try again if incorrect, or return 'that's the word' 
-    ***function NOT COMPLETE!***
+    ***function COMPLETE!***
 
 6) If there is an instance of the letter, return 'letter is present somewhere'
-    ***function NOT COMPLETE!***
+    ***function COMPLETE!***
 
-7) Try again until correct
+7) Try again until correct, instances of 6) and 5) should be saved e.g. '_ E _ _ Y' 
     ***function NOT COMPLETE!***
     
 */
